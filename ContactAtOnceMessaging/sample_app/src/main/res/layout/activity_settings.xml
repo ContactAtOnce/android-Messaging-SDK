@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/settings_application_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/application_id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/settings_provider_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/provider_id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/settings_baseurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/base_url"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/settings_use_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/use_full_screen" />
+
+    <CheckBox
+        android:id="@+id/settings_provide_noconversations_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/provide_noconversations_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/messaging_sdk_version" />
+
+        <TextView
+            android:id="@+id/settings_sdkversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

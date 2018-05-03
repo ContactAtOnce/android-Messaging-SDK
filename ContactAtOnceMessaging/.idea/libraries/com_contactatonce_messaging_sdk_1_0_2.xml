@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.contactatonce.messaging:sdk-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-1.0.2.aar/2d205da070a5ef428f89fd2d8a31220a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-1.0.2.aar/2d205da070a5ef428f89fd2d8a31220a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.liveperson.sample.app"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 100
+        versionName "1.0.0"
+    }
+    buildTypes {
+
+        debug{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.gms:play-services-gcm:9.8.0'
+    implementation 'com.google.firebase:firebase-messaging:9.8.0'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support:gridlayout-v7:25.4.0'
+    implementation ('com.contactatonce.messaging:sdk:1.+@aar'){transitive=true}
+    debugImplementation 'com.amitshekhar.android:debug-db:0.4.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
